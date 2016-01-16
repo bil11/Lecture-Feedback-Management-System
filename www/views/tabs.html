@@ -1,0 +1,16 @@
+<!-- Generates tabs at the bottom of the screen -->
+<ion-tabs class="tabs-icon-top tabs-positive" ng-class="{'tabs-item-hide': hideTabs}">
+
+<ion-tab title="Courses" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" href="#/courses" hidden="true">
+  	<ion-nav-view name="coursesView"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Feedback" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline" href="#/tabs/feedback">
+  	<ion-nav-view name="feedbackView"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Notifications" icon-on="ion-android-notifications" icon-off="ion-android-notifications-none" href="#/tabs/notifications">
+  	<ion-nav-view name="notificationsView"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>

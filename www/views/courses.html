@@ -1,0 +1,21 @@
+<!-- **** This module shows the list of all the courses that the student 
+     **** is enrolled in. -->
+
+<ion-view view-title="Your Courses">
+
+<ion-nav-buttons side="secondary">
+      <button class="button button-icon ion-plus-circled" ng-click="addCourses()">
+      </button>
+    </ion-nav-buttons>
+
+    <ion-content>
+      <div class="list">
+        <a ng-repeat="userCourse in userCourses" class="item item-thumbnail-left" ng-click="func(userCourse.name,userCourse.profid)">
+          <img ng-src="{{ userCourse.img }}">
+          <h2>{{ userCourse.name }}</h2>
+          <h4>{{ userCourse.lecturer }}</h4>
+        </a>
+      </div>
+
+    </ion-content>
+</ion-view>

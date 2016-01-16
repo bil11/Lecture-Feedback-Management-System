@@ -1,0 +1,20 @@
+<!-- **** This module will show a list of all the courses available so that a student
+     **** can add courses to his list in order to receive the notifications as well
+     **** as to provide lecture feedbacks -->
+<ion-view view-title="Add Courses">
+
+    <ion-content>
+
+      <div class="list">
+
+        <ion-toggle ng-repeat="course in courses"
+                    ng-model="course.checked" 
+                    ng-checked="course.checked" class="item item-thumbnail-left" ng-click="selectedCourse(course)">
+          <img ng-src="{{ course.img }}" style="height:90px;width:100px">
+          <h2>{{ course.name }}</h2>
+          <h4>{{ course.lecturer }}</h4>
+        </ion-toggle>
+      </div>
+       
+    </ion-content>
+</ion-view>

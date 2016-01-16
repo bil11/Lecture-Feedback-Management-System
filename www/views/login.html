@@ -1,0 +1,19 @@
+<!-- **** This module shows the login page of the app -->
+
+<ion-view view-title="User Login">
+    <ion-content class="splash">                
+		<div class="list" id="loginwindow">
+
+			<label class="item item-input" id="textfields">
+				<input type="text" placeholder="Email Address" ng-model="data.username">
+			</label>
+			<label class="item item-input" id="textfields">
+				<input type="password" placeholder="Password" ng-model="data.password">
+			</label>
+    	<button id="textfields" class="button button-block button-positive" ng-click="userLogin(data)">Login</button>
+                </div>
+
+
+
+    </ion-content>
+</ion-view>

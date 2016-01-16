@@ -1,0 +1,31 @@
+<!-- **** This module lists all the feedbacks that the student has given 
+     **** about the lectures of a particular course over time -->
+
+
+<!-- * The module below will show the "add-feedback" button if the logged-in 
+       user is a student. The checking will be carried out via the "checker"
+       variable. If the logged-in user is a student, value of "checker" will be
+       greater than zero. -->
+<ion-view view-title="Lecture Feedback">
+<ion-nav-buttons side="secondary">
+      <button class="button button-icon ion-plus-circled" ng-click="fbCtrl()" ng-hide="{{checker==-1}}">
+      </button>
+</ion-nav-buttons>
+
+
+<!-- * The module below will either
+     i.  list all the feedbacks given by the student (logged-in user is a student)
+     ii. list all the feedbacks given by all the students enrolled in the course
+         (logged-in user is a professor)-->
+<ion-content>
+<div class="list">
+        <a ng-repeat="fb in feedbacks" ui-sref="tabs.feedback({course: fb.name})"
+         class="item item-thumbnail-left">
+
+          <img ng-src="{{fbLogo}}">
+          <h4>{{ fb.date }}</h4>
+          <p>{{ fb.feedback }}</p>
+        </a>
+</div>
+</ion-content>
+</ion-view>

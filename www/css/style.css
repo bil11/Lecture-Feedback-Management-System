@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+.splash{
+    background: url(../img/fhkiel1.jpg) no-repeat
+        center center fixed;
+    background-size: cover;
+
+}
+
+#loginwindow{
+        //background: url(../img/fhkiellogo.jpg) no-repeat;
+        //background-size: cover;
+        background-color: rgba(255,255,255,0.8);
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        height: 50%;
+        width: 50%;
+        border: none;
+
+}
+
+#textfields{
+    background-color: rgba(0,0,0,0);
+    color:black;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    text-align: center;
+}
