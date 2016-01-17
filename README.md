@@ -10,6 +10,7 @@ In light of the issues mentioned above, we made a hybrid web/mobile app to solve
 i. After every lecture, a notification is being sent on a student's smart phone, informing him that a lecture feedback is due (only if the student is enrolled in that particular course). Afterwards, he can use the web app or mobile app to give the lecture feedback. Student's identity will remain anonymous. (Note: The notification part is currently disabled in this particular feature).
 
 ii. If a professor has an announcement to make, he can do it via the app and corresponding notification will be sent (via Ionic Push Notification Service) to all the respective students, informing them of the update.
+
 HOW TO RUN THIS APP:
 
 i. Install nodeJS, Cordova and Ionic Frameworks. More info at (ionicframework.com/getting-started).
