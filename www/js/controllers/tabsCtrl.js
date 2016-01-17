@@ -1,7 +1,7 @@
 
 var ionicApp = angular.module('tabsModule', ['ionic']);
 
-ionicApp.controller('tabsCtrl', ['$scope', '$rootScope', '$state', 'firebaseReferenceService', '$localstorage', function($scope, $rootScope, $state, firebaseReferenceService, $localstorage) {
+ionicApp.controller('tabsCtrl', ['$scope', '$rootScope', '$state', 'firebaseReferenceService', '$localstorage', '$ionicSideMenuDelegate', function($scope, $rootScope, $state, firebaseReferenceService, $localstorage, $ionicSideMenuDelegate) {
 
         $rootScope.$on('$ionicView.beforeEnter', function() {
 
@@ -16,7 +16,10 @@ ionicApp.controller('tabsCtrl', ['$scope', '$rootScope', '$state', 'firebaseRefe
           ionic.Platform.exitApp();
         }
 
-
+        $scope.toggleLeft = function()
+        {
+            $ionicSideMenuDelegate.toggleLeft();
+        }
 
         $scope.logout = function()
         {

@@ -1,0 +1,9 @@
+{
+  "firebase": "feedback-system",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

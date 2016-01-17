@@ -4,6 +4,10 @@
     <ion-nav-bar class="bar-positive">
       <ion-nav-back-button class="button-icon ion-arrow-left-c">
       </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()">
+            </button>
+          </ion-nav-buttons>
       <ion-pane ng-include="'views/tabs.html'">
       <ion-view></ion-view>
       </ion-pane>
@@ -18,8 +22,8 @@
     <ion-content has-header="true">
       <ion-list>
         <ion-item nav-clear menu-close ui-sref="tabs.courses">Courses</ion-item>
-        <ion-item nav-clear menu-close ui-sref="schedule">Update Schedule</ion-item>
-        <ion-item nav-clear menu-close ui-sref="test">Test App</ion-item>
+        <!--<ion-item nav-clear menu-close ui-sref="schedule">Update Schedule</ion-item>-->
+        <!--<ion-item nav-clear menu-close ui-sref="test">Test App</ion-item>-->
         <!-- <ion-item nav-clear menu-close ui-sref="login">Logout</ion-item> -->
         <ion-item nav-clear menu-close ng-click="logout()">Logout</ion-item>
         <ion-item nav-clear menu-close ng-click="exitApplication()">Exit</ion-item>

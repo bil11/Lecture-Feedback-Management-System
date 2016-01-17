@@ -27,7 +27,7 @@ getData();
 
 $scope.notifyCtrl = function()
       {
-        $scope.data = {}
+        $scope.data = {};
         var currentDate = getDate();
         var mypopup = $ionicPopup.show  // popup window for generating new notification
         ({
