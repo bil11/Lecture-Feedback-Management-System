@@ -20,7 +20,8 @@ ii. Use "ionic serve" on CLI to view the web version of the app and "ionic emula
 iii. Live version of the app can be accessed via the following link: feedback-system.firebaseapp.com
 
 iv. Test Student Account: (username: teststudent@student.fh-kiel.de , password: 123456)
-    Test Professor Account: (username: testprofessor@fh-kiel.de , password: 123456)
+
+v. Test Professor Account: (username: testprofessor@fh-kiel.de , password: 123456)
 
 TECH STACK
 
